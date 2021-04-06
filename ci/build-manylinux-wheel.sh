@@ -7,6 +7,8 @@
 
 set -ex
 
+yum install -y libffi-devel
+
 if [ -e /tmp/wheels ]; then
     echo "/tmp/wheels should not exist!"
     exit 1
